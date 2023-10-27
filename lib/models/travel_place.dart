@@ -8,7 +8,7 @@ class TravelPlace {
   final int? shared;
   final String? description;
   final List<String> imagesUrl;
-  final StatusTag? statusTag;
+  final StatusTag statusTag;
   final TravelUser user;
   final String? locationDesc;
 

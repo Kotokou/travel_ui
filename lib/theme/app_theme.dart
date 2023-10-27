@@ -31,6 +31,7 @@ class AppTheme {
           fontWeight: FontWeight.w400,
           color: Colors.grey,
         ),
+        // subtitle1
         titleMedium: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 16,
@@ -52,6 +53,7 @@ class AppTheme {
           fontSize: 14,
           fontWeight: FontWeight.w400,
         ),
+        // headline6
         titleLarge: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 20,
@@ -62,7 +64,6 @@ class AppTheme {
           fontSize: 24,
           fontWeight: FontWeight.w500,
         ),
-
         headlineMedium: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 28,
