@@ -1,0 +1,1 @@
+enum StatusTag { popular, event }
