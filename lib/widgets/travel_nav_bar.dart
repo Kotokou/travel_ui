@@ -18,6 +18,7 @@ class TravelNavBar extends StatelessWidget {
     return CustomPaint(
       painter: _NavPainter(),
       child: Container(
+        color: Colors.transparent,
         height: kToolbarHeight,
         child: Row(
           children: List.generate(

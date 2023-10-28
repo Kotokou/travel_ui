@@ -14,6 +14,7 @@ class PlaceDetailView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.transparent,
       body: CustomScrollView(
         physics: const BouncingScrollPhysics(),
         slivers: [
@@ -23,7 +24,11 @@ class PlaceDetailView extends StatelessWidget {
               maxExtent: MediaQuery.of(context).size.height,
               minExtent: 250,
               builder: (percent) {
-                return AnimatedDetailHeader(place: place);
+                return AnimatedDetailHeader(
+                  place: place,
+                  bottomPercent: (percent / .3).clamp(0.0, 1.0),
+                  topPercent: ((1 - percent) / .7).clamp(0.0, 1.0),
+                );
               },
             ),
           ),
