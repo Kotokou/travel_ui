@@ -35,7 +35,10 @@ class FeedView extends StatelessWidget {
                 PageRouteBuilder(
                   pageBuilder: (_, animation, __) => FadeTransition(
                     opacity: animation,
-                    child: PlaceDetailView(place: place),
+                    child: PlaceDetailView(
+                      place: place,
+                      screenHeight: MediaQuery.sizeOf(context).height,
+                    ),
                   ),
                 ),
               );
