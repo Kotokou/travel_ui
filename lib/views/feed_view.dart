@@ -28,21 +28,26 @@ class FeedView extends StatelessWidget {
         padding: const EdgeInsets.fromLTRB(20, 0, 20, kToolbarHeight + 20),
         itemBuilder: (context, index) {
           final place = places[index];
-          return PlaceCard(
-            place: place,
-            onPressed: () async {
-              Navigator.of(context).push(
-                PageRouteBuilder(
-                  pageBuilder: (_, animation, __) => FadeTransition(
-                    opacity: animation,
-                    child: PlaceDetailView(
-                      place: place,
-                      screenHeight: MediaQuery.sizeOf(context).height,
+          return Hero(
+            tag: place.id!,
+            child: Material(
+              child: PlaceCard(
+                place: place,
+                onPressed: () async {
+                  Navigator.of(context).push(
+                    PageRouteBuilder(
+                      pageBuilder: (_, animation, __) => FadeTransition(
+                        opacity: animation,
+                        child: PlaceDetailView(
+                          place: place,
+                          screenHeight: MediaQuery.sizeOf(context).height,
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-              );
-            },
+                  );
+                },
+              ),
+            ),
           );
         },
       ),

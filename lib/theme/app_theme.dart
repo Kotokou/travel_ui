@@ -60,11 +60,13 @@ class AppTheme {
           fontSize: 20,
           fontWeight: FontWeight.w500,
         ),
+        //  headline5
         headlineSmall: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 24,
           fontWeight: FontWeight.w500,
         ),
+
         headlineMedium: TextStyle(
           fontFamily: 'Poppins',
           fontSize: 28,
