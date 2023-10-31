@@ -12,9 +12,12 @@ class FeedView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: const Text("Feed"),
+        title: const Text(
+          "Feed",
+          style: TextStyle(color: Colors.black),
+        ),
         leading: IconButton(
             onPressed: () {}, icon: const Icon(CupertinoIcons.search)),
         actions: [

@@ -100,7 +100,7 @@ class _PlaceDetailViewState extends State<PlaceDetailView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.transparent,
+      backgroundColor: Colors.white,
       body: Stack(
         children: [
           AbsorbPointer(
