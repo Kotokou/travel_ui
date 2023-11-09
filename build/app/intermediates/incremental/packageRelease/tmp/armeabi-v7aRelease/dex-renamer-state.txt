@@ -1,4 +1,0 @@
-#Tue Oct 31 20:28:33 GMT 2023
-base.0=/home/papdav/workspace/github/travel_ui/build/app/intermediates/dex/release/minifyReleaseWithR8/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
