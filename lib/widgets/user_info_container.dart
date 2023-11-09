@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:travel_ui/theme/app_text_style.dart';
@@ -25,7 +26,7 @@ class UserInfoContainer extends StatelessWidget {
       child: Row(
         children: [
           CircleAvatar(
-            backgroundImage: NetworkImage(place.user.photoUrl),
+            backgroundImage: CachedNetworkImageProvider(place.user.photoUrl),
           ),
           const Gap(10),
           Column(

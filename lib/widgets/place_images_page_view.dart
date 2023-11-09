@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -45,7 +46,7 @@ class _PlaceImagesPageViewState extends State<PlaceImagesPageView> {
                     BoxShadow(color: Colors.black12, blurRadius: 10),
                   ],
                   image: DecorationImage(
-                    image: NetworkImage(imageUrl),
+                    image: CachedNetworkImageProvider(imageUrl),
                     fit: BoxFit.cover,
                     colorFilter: const ColorFilter.mode(
                       Colors.black26,
